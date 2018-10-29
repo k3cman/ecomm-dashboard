@@ -1,0 +1,73 @@
+:root {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  color: #171c24;
+}
+
+.drawer {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #f5f7fa;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+.drawer a {
+  text-decoration: none;
+}
+.drawer .drawer-icon {
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  color: #647aa1;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+.drawer .drawer-icon:hover {
+  color: #171c24;
+}
+.drawer .drawer-icon svg {
+  height: 40px;
+  width: 40px;
+}
+.drawer .drawer-icon p {
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0;
+}
+.drawer .divider {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  vertical-align: bottom;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid rgba(100, 122, 161, 0.6);
+}
+
+.main {
+  width: calc(100%-100px);
+  height: 100%;
+  margin-left: 140px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.card {
+  height: 200px;
+  background-color: #f3f5f9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
