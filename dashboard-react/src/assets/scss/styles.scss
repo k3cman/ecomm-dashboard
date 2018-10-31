@@ -18,6 +18,8 @@ $font: 'Open Sans', sans-serif;
   padding-top: 20px;
   color: white;
   text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);
+
   a {
     text-decoration: none;
   }
@@ -60,6 +62,7 @@ $font: 'Open Sans', sans-serif;
   margin-left: 140px;
   margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -71,4 +74,38 @@ $font: 'Open Sans', sans-serif;
   vertical-align: center;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 20px;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.orders-table {
+  width: 90%;
+  .header {
+    border-top-right-radius: 10px;
+    color: white;
+    th {
+      padding: 10px;
+      background-color: #647aa1;
+      cursor: pointer;
+      &:hover {
+        background-color: #171c24;
+      }
+    }
+    tr {
+      padding: 5px;
+      border: 1px solid #647aa1;
+    }
+  }
 }
