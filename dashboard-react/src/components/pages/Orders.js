@@ -85,12 +85,20 @@ const Orders = props => {
           <td>Notes</td>
         </tr>
       </table>
-      <ul>
-        <li />
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+      <div className="pag">
+        <div className="pagination">
+          <a href="/">&laquo;</a>
+          <a href="/">1</a>
+          <a href="/" class="active">
+            2
+          </a>
+          <a href="/">3</a>
+          <a href="/">4</a>
+          <a href="/">5</a>
+          <a href="/">6</a>
+          <a href="/">&raquo;</a>
+        </div>
+      </div>
     </Fragment>
   );
 };
