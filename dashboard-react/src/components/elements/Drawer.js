@@ -12,38 +12,37 @@ const Drawer = props => {
   return (
     <div className="drawer">
       <Link to="/">
-        <div className="drawer-icon">
+        <div className="drawer-icon active">
           <IoMdHome />
-          <p>Dashboard</p>
+          <p>Dash</p>
         </div>
       </Link>
 
-      <div className="divider">&nbsp;</div>
       <Link to="/orders">
         <div className="drawer-icon">
           <IoMdCart />
-          <p>Porudžbine</p>
+          <p>Orders</p>
         </div>
       </Link>
-      <div className="divider">&nbsp;</div>
+
       <Link to="/stats">
         <div className="drawer-icon">
           <IoMdAnalytics />
           <p>Statistika</p>
         </div>
       </Link>
-      <div className="divider">&nbsp;</div>
+
       <Link to="/pagebuilder">
         <div className="drawer-icon">
           <IoMdCodeWorking />
-          <p>PageBuilder</p>
+          <p>Page</p>
         </div>
       </Link>
-      <div className="divider">&nbsp;</div>
+
       <Link to="emailbuilder">
         <div className="drawer-icon">
           <IoMdMail />
-          <p>EmailBuilder</p>
+          <p>Email</p>
         </div>
       </Link>
     </div>

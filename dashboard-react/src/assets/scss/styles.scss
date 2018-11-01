@@ -4,39 +4,49 @@ $font: 'Open Sans', sans-serif;
   font-family: $font;
   box-sizing: border-box;
   color: #171c24;
+  background-color: #f5f5f5;
 }
 
 .drawer {
   height: 100%;
-  width: 100px;
+  width: 60px;
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
-  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
-  padding-top: 20px;
   color: white;
   text-align: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);
-
+  justify-content: center;
+  background: #396afc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #396afc,
+    #2948ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #396afc, #2948ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   a {
     text-decoration: none;
   }
-
+  .active {
+    border-left: 4px solid white;
+  }
   .drawer-icon {
-    margin-top: 15px;
-    padding-top: 15px;
+    margin-top: 10px;
+    padding-top: 10px;
     padding-bottom: 20px;
-    color: #647aa1;
+    color: #fff;
     cursor: pointer;
-    transition: color 0.5s ease;
+    transition: border-left 0.3s ease;
     &:hover {
-      color: #171c24;
+      border-left: 4px solid white;
     }
     svg {
-      height: 40px;
-      width: 40px;
+      height: 20px;
+      width: 20px;
     }
     p {
       font-size: 11px;
@@ -55,7 +65,6 @@ $font: 'Open Sans', sans-serif;
     border-bottom: 1px solid rgba(100, 122, 161, 0.6);
   }
 }
-
 .main {
   width: calc(100%-100px);
   height: 100%;
@@ -64,11 +73,9 @@ $font: 'Open Sans', sans-serif;
   display: flex;
   flex-wrap: wrap;
 }
-
 .card {
-  height: 200px;
-  background-color: #f3f5f9;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);
+  // height: 200px;
+  // border: 0.5px solid black;
   border-radius: 10px;
   text-align: center;
   vertical-align: center;
@@ -89,23 +96,17 @@ $font: 'Open Sans', sans-serif;
     }
   }
 }
-
 .orders-table {
+  border-radius: 10px;
   width: 90%;
-  .header {
-    border-top-right-radius: 10px;
-    color: white;
-    th {
-      padding: 10px;
-      background-color: #647aa1;
-      cursor: pointer;
-      &:hover {
-        background-color: #171c24;
-      }
-    }
-    tr {
-      padding: 5px;
-      border: 1px solid #647aa1;
-    }
+  border-spacing: 0;
+  tr,
+  td,
+  th {
+    text-align: center;
+    background-color: #fff;
+    border: 0.5px solid #f5f5f5;
+    padding: 5px;
+    margin: 0;
   }
 }
