@@ -72,8 +72,8 @@ class Landing extends Component {
   render() {
     return (
       <Fragment>
-        <Card width="60%" height="300px">
-          <ResponsiveContainer>
+        <Card width="25%" height="250px">
+          {/* <ResponsiveContainer>
             <LineChart
               width={100}
               height={100}
@@ -87,10 +87,29 @@ class Landing extends Component {
               <Line type="monotone" dataKey="pv" stroke="#8884d8" />
               <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
             </LineChart>
-          </ResponsiveContainer>
+          </ResponsiveContainer> */}
+          Zarada
         </Card>
-        <Card width="25%" height="300px">
-          <RadialBarChart
+        <Card width="25%" height="250px">
+          {/* <ResponsiveContainer>
+            <LineChart
+              width={100}
+              height={100}
+              data={this.state.data}
+              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+            </LineChart>
+          </ResponsiveContainer> */}
+          OnHold
+        </Card>
+        <Card width="25%" height="250px">
+          {/* <RadialBarChart
             width={500}
             height={300}
             cx={150}
@@ -115,13 +134,14 @@ class Landing extends Component {
               verticalAlign="middle"
               wrapperStyle={this.state.style}
             />
-          </RadialBarChart>
+          </RadialBarChart> */}
+          Prihvaceno
         </Card>
-        <Card width="45%" height="400px">
-          <h1>Notes</h1>
+        <Card width="25%" height="500px">
+          <h1>Todo</h1>
         </Card>
-        <Card width="45%" height="400px">
-          <h1>Latest orders</h1>
+        <Card width="51%" height="500px">
+          <h1>CHART</h1>
         </Card>
       </Fragment>
     );

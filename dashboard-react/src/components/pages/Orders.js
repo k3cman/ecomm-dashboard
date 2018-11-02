@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 
+import { IoMdMore } from 'react-icons/io';
+
 const Orders = props => {
   return (
     <Fragment>
@@ -11,6 +13,7 @@ const Orders = props => {
           <th>Ime</th>
           <th>Plaćanje</th>
           <th>Notes</th>
+          <th>Options</th>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -19,6 +22,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -27,6 +33,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -35,6 +44,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -43,6 +55,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -51,6 +66,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -59,6 +77,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -67,6 +88,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -75,6 +99,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
         <tr>
           <td>OnHold</td>
@@ -83,6 +110,9 @@ const Orders = props => {
           <td>Ime</td>
           <td>Plaćanje</td>
           <td>Notes</td>
+          <td>
+            <IoMdMore />
+          </td>
         </tr>
       </table>
       <div className="pag">

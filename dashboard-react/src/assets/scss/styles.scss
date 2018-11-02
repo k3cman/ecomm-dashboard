@@ -17,32 +17,32 @@ $font: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  color: white;
+  color: #333;
   text-align: center;
   justify-content: center;
-  background: #396afc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #396afc,
-    #2948ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #396afc, #2948ff);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #396afc; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to right,
+  //   #396afc,
+  //   #2948ff
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #396afc, #2948ff);
+  // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   a {
     text-decoration: none;
   }
   .active {
-    border-left: 4px solid white;
+    border-left: 4px solid #333;
   }
   .drawer-icon {
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
-    color: #fff;
+    color: #333;
     cursor: pointer;
     transition: border-left 0.3s ease;
     &:hover {
-      border-left: 4px solid white;
+      border-left: 4px solid #333;
     }
     svg {
       height: 20px;
@@ -74,8 +74,9 @@ $font: 'Open Sans', sans-serif;
   flex-wrap: wrap;
 }
 .card {
-  // height: 200px;
-  // border: 0.5px solid black;
+  min-height: 200px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
   text-align: center;
   vertical-align: center;
